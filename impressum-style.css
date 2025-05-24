@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    overflow:hidden;
+    position: relative;
+    background-image: url('img/desert-impressum.jpg');
+    background-position: center;
+    background-size: cover;
+    font-family: "Inter", sans-serif;
+    color: black;
+
+}
+
+.back-button {
+    text-decoration: none;
+    position: fixed;
+    color: rgb(174, 202, 84);
+    text-shadow:  rgb(12, 12, 12) 2px 1px 0;
+    top:2%;
+    right: 3%;
+    font-size: clamp(1rem, 0.286rem + 1.905vw, 2rem);
+    -webkit-text-stroke: 0.7px black;
+    font-weight: bold;
+}
+
+.back-button:hover  {
+    color:rgb(45, 45, 45);
+    -webkit-text-stroke: 0.4px rgb(174, 202, 84);
+}
+
+.title {
+    color: rgb(174, 202, 84);
+    text-shadow:  rgb(12, 12, 12) 2px 1px 0;
+    font-size: clamp(1.75rem, 0.5rem + 3.333vw, 3.5rem);
+    -webkit-text-stroke: 0.7px black;
+}
+
+.under-title {
+    color: rgb(174, 202, 84);
+    text-shadow:  rgb(12, 12, 12) 2px 1px 0;
+    font-size: clamp(1.25rem, 0.714rem + 1.429vw, 2rem);
+    -webkit-text-stroke: 0.5px black;
+}
+
+.impressum-content {
+    width: 100%;
+    margin-left: 3%;
+    font-size:clamp(1rem, 0.643rem + 0.952vw, 1.5rem);
+    font-weight: 600;
+    height: 100vh;
+    line-height: 1.6;
+}
+
+p {
+    margin-left: 2%;
+}
+
+@media(max-height:790px) {
+    body {
+        margin: 0;
+        height: 880px;
+        overflow: auto;
+    }
+}
